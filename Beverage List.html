@@ -1,0 +1,341 @@
+﻿<!DOCTYPE>
+<html>
+
+<head>
+<title>Beverage List</title>
+<link rel="icon" type="image/png" href="https://i.ibb.co/VpxWD05/Group-logo-and-name.png">
+
+<style>
+
+/* side menu css */
+.sidenav {
+  height: 100%;
+  width: 170px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* end of side menu css*/
+
+
+
+/* my css */
+p {
+	margin-left: 200px;
+	margin-right: 50px;
+	font-size: 32px;
+	text-align: center;
+}
+
+#beverageSelect {
+	font-size: 28px;
+	font-family: "Comic Sans MS";
+}
+
+#beverageSelect:hover {
+	color: white;
+	background-color: black;
+	text-decoration:none;
+	font-style:normal;
+	
+	
+}
+
+#beverageSelect:visited {
+	text-decoration: none;
+	color: black;
+	font-style:normal;
+}
+
+body {
+	background-color: #fffdd0;
+}
+
+#specialParagraph:hover {
+	background-color: black;
+	color: white;
+	transition: 0.8s ease;
+	
+	
+}
+
+#specialParagraph:visted {
+	text-decoration:none;
+	color: black;
+	
+}
+
+/* end of my css */
+
+
+/* header starts here*/
+.header {
+	overflow: hidden;
+	background-color: white;
+	padding: 10px 1px;
+}
+
+.bg-img {
+	
+	background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1fd4b813-3342-40f7-af93-ae4a33089ef1/dato4eu-69d15573-0893-4e71-b164-10be65c54087.jpg/v1/fill/w_1280,h_625,q_75,strp/commission__coffee_shop_by_taro_k_dato4eu-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjI1IiwicGF0aCI6IlwvZlwvMWZkNGI4MTMtMzM0Mi00MGY3LWFmOTMtYWU0YTMzMDg5ZWYxXC9kYXRvNGV1LTY5ZDE1NTczLTA4OTMtNGU3MS1iMTY0LTEwYmU2NWM1NDA4Ny5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.YHs57XVGoQ2Hb7pcnRBF6bg0e38ME1SKpntZLCqs-cI");
+	filter: blur(2px);
+	-webkit-filter: blur(6px);
+	height: 400px;
+	width:100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover; 
+}
+
+.bg-text {
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 35%;
+  left: 55.5%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  height: 40%;
+ 
+  
+}
+/* header ends here*/
+
+
+/* double column div styling*/
+.column {
+	float: left;
+	width: 50%;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+} 
+
+/* double column div styling ends here
+
+/*footer starts ehre*/
+.footer {
+   position: static;
+   left: 0;
+   bottom: 1;
+   width: 100%;
+   background-color: #bbb;
+   color: white;
+   text-align: center;
+   height: 30%;
+  }
+/*footer ends here*/
+
+
+
+</style>
+</head>
+
+<body style="background-color:#fffdd0;">
+
+
+<body>
+<!--side nav start-->
+<div class="sidenav">
+	<a href="main page.html">Home</a>
+	<a href ="Beverage List.html" style="background-color: white; color: black;"> Store </a>
+	<a href="Contact Us Now!.html">About Us</a>
+	<a href="DinnerHeist bubble tea.html"> Ingredients</a>
+	<a href="tutorial.html"> Tea Tutorial</a>
+	<a href="homepage.html"> Collaborations</a>
+	<a href="we're hiring.html"> We're Hiring</a>	 
+	<a href="Outlets.html"> Branch</a>
+	<a href="login.html"> Member Login</a>
+	<a href="leave us a message!.html"> Delivery </a>
+	
+</div>
+
+<!--side nav end-->
+
+<!--header starts here-->
+	<div class="header">
+		<div class="bg-img">		
+			<img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1fd4b813-3342-40f7-af93-ae4a33089ef1/dato4eu-69d15573-0893-4e71-b164-10be65c54087.jpg/v1/fill/w_1280,h_625,q_75,strp/commission__coffee_shop_by_taro_k_dato4eu-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjI1IiwicGF0aCI6IlwvZlwvMWZkNGI4MTMtMzM0Mi00MGY3LWFmOTMtYWU0YTMzMDg5ZWYxXC9kYXRvNGV1LTY5ZDE1NTczLTA4OTMtNGU3MS1iMTY0LTEwYmU2NWM1NDA4Ny5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.YHs57XVGoQ2Hb7pcnRBF6bg0e38ME1SKpntZLCqs-cI"
+				alt="header background"
+					style="margin-left: 200px;">
+						</div>
+</div>
+<div class="bg-text">
+	<p>
+		<a href="main page.html" style="text-decoration:none;">
+		
+		<img src="https://i.ibb.co/VpxWD05/Group-logo-and-name.png" width="138" 
+			alt="logo"
+				style="margin-left: -100px;"> 
+				<br> 
+					
+					</a>
+		
+		<p align="center"> &#120138;&#120150;&#120163;&#120167;&#120154;&#120159;&#120152; &#120165;&#120153;&#120150; &#120121;&#120150;&#120164;&#120165; &#120139;&#120150;&#120146; &#120146;&#120159;&#120149; &#8450;&#120160;&#120151;&#120151;&#120150;&#120150; &#120154;&#120159; &#120139;&#120160;&#120168;&#120159;</p>
+	
+	
+</div>
+<!-- header ends here-->
+
+<!-- content starts here-->
+
+
+<!--
+<p style="font-size:32px; text-align: center; margin-left: 200px; margin-right: 50px;"> &#119861;&#119890;&#120011;&#119890;&#120007;&#119990;&#119892;&#119890; &#119872;&#119890;&#120003;&#120010; </p>
+
+<pre style="font-size:17px;"> Milk Tea Series                         Tea Series</pre>
+<hr>
+
+<pre style="font-size:17px;">
+ Royal No. 9 Milk Tea                    Assam Black Tea         
+
+ Black/Green/Qing Oolong Milk Tea        Royal No. 9 Black Tea
+
+ Tapioca Milk Tea                        Qingcha Oolong tea
+   
+ Garden Milk Tea                         Lemon Winter Melon Tea
+ 
+ Little Happiness Milk Tea               Seasons Tea
+
+ Honey Golden Pearl Milk tea             Black Tea
+ 
+ Roasted Brown Sugar Pearl Milk Tea      Green Tea
+ 
+ Japanese Roasted Milk Tea               Passion Fruit Green Tea
+
+ Grass Jelly Milk Tea                    Jasmine Green Tea
+</pre>
+
+
+<hr>
+<pre style="font-size:17px;"> Coffee / Chocolate                      Smoothies</pre>
+<hr>
+<pre style="font-size:17px;">
+ Americano                               Strawberry Pudding Smoothies
+  
+ Latte                                   Mango Passion Fruit Smoothies
+  
+ Matcha coffee                           Lychee Sago Tea Smoothies
+   
+ Drown-a-Bear Au Lait                    Malty Smoothies (Horlicks)
+
+ Caramel Latte                           Pineapple Smoothies
+
+ Cappuccino                              Peach Papaya Smoothies
+</pre>
+
+-->
+
+
+<!--Bubble Tea Series-->
+<div class="row">
+<div class="column">
+	<p> <a href="Bubble Tea Series.html" id="specialParagraph" style="text-decoration:none;" > Bubble Tea Series <a/> </p>
+
+<p align="center">
+<a href="Bubble Tea Series.html">
+	<img src="https://theforkedspoon.com/wp-content/uploads/2019/03/How-to-make-Bubble-Tea-8-500x500.jpg" 
+		alt="bubble tea" 
+			style="width: 30%; height: 20%" align="middle">
+			</a>
+</p>
+
+</div><br />
+
+<!--Tea Series-->
+<div class="column">
+	<p> <a href="Tea Series.html" id="specialParagraph" style="text-decoration:none;"> Tea Series</p>
+		<p align="center">
+		<a href="Tea Series.html">
+		<img src="http://www.starbucks.com.my/media/drinks-earl-gray-brewed-tea-menu-asset_tcm58-9939_w1024_n.jpg"
+			alt="tea"
+				style=""
+					</p>
+						</a>
+</div> <br>
+
+<!--Coffee Series-->
+<div class="column">
+	<p> <a href="coffee series.html" id="specialParagraph" style="text-decoration:none;"> Coffee Series </p>
+		<a href="coffee series.html">
+		<p align="center">
+			<img src="http://www.starbucks.com.my/media/CoffeeOfTheDay_tcm58-11356_w1024_n.jpg"	
+					alt="coffee"
+						style=""
+		</p>
+			</a>
+
+</div>
+<!--Non-Caffeinated Series-->
+<div class="column">
+	<p> <a href="non caffeinated series.html" id="specialParagraph" style="text-decoration:none;"> Non-Caffeinated Series</p>
+		<a href="non caffeinated series.html">
+		<p align="center">
+			<img src="http://www.starbucks.com.my/media/Starbucks-Signature-Hot-Chocolate_tcm58-4421_w1024_n.jpg"
+				alt="hot chocolate"
+						</p>
+	</a>
+</div>
+<!--Smoothies-->
+<div class="column">
+	<p> <a href="smoothie series.html" id="specialParagraph" style="text-decoration:none;"> Smoothies Series </p>
+	<a href="smoothie series.html">
+		<p align="center">
+			<img src="http://www.starbucks.com.my/media/Asset-Raspberry-Blackcurrant-Frappuccino-Blended-Juice_tcm58-10158_w1024_n.jpg"
+				alt="smoothie"
+		</p>
+			</a>
+</div> <br />
+</div>
+
+
+
+<div class="footer">
+<br />
+	<p style="text-align: left; font-size: 18px;"> Got a question? Please email us:  <br />
+		evoltoteaandcoffee2019@gmail.com <br /> 
+		Call us at: <br />
+		(+60) 12341234 <br />
+		</p>
+		<pre style="margin-left:70px;" align="left">
+		© Copyright by Evoltotnc Sdn Bhd.
+			</pre>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,559 @@
+﻿<!DOCTYPE html>
+<html  xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+<title> Delivery </title>
+<link rel="icon" type="image/png" href="https://i.ibb.co/VpxWD05/Group-logo-and-name.png">
+
+<style>
+
+/* side menu css */
+.sidenav {
+  height: 100%;
+  width: 170px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* end of side menu css*/
+
+/*header starts here*/
+.header {
+	overflow: hidden;
+	background-color: white;
+	padding: 10px 1px;
+}
+
+.bg-img {
+	
+	background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1fd4b813-3342-40f7-af93-ae4a33089ef1/dato4eu-69d15573-0893-4e71-b164-10be65c54087.jpg/v1/fill/w_1280,h_625,q_75,strp/commission__coffee_shop_by_taro_k_dato4eu-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjI1IiwicGF0aCI6IlwvZlwvMWZkNGI4MTMtMzM0Mi00MGY3LWFmOTMtYWU0YTMzMDg5ZWYxXC9kYXRvNGV1LTY5ZDE1NTczLTA4OTMtNGU3MS1iMTY0LTEwYmU2NWM1NDA4Ny5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.YHs57XVGoQ2Hb7pcnRBF6bg0e38ME1SKpntZLCqs-cI");
+	filter: blur(2px);
+	-webkit-filter: blur(6px);
+	height: 400px;
+	width:100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover; 
+}
+
+.bg-text {
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 35%;
+  left: 55.5%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  height: 40%; 
+}
+/*header ends here*/
+
+/* div tag start*/
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.vl {
+  border-left: 1px solid #bbb;
+  height: 500px;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  margin-top: 30px;
+}
+
+/* div tag end */
+
+/* my css */
+#grabfoodsdescription {
+	font-size: 22px;
+	margin-left: 200px;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: left;
+}
+
+p {
+	margin-left: 200px;
+	margin-right: 50px;
+	font-size: 32px;
+	text-align: center;
+}
+
+
+body {
+	background-color: #fffdd0;
+}
+/* end of my css */
+
+/* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-left: 150px
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* custom button css */
+.button {
+	background-color: #bbb;
+	width: 15%;
+	height: 20px;
+	text-align: center;
+	display: inline-block;
+	padding: 15px 15px;
+	color: white;
+	border: none;
+	font-size: 16px;
+	text-decoration:none;	
+}
+
+.button:hover {
+	background-color: #bbb;
+	color:white;
+}
+
+#visited {
+	text-decoration:none;
+	color: white;
+}
+
+/*custom css button ends here */
+
+/*footer starts ehre*/
+.footer {
+   position: static;
+   left: 0;
+   bottom: 1;
+   width: 100%;
+   background-color: #bbb;
+   color: white;
+   text-align: center;
+   height: 100%;
+  }
+/*footer ends here*/
+
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!--side nav start-->
+<div class="sidenav">
+	<a href="main page.html">Home</a>
+	<a href ="Beverage List.html"> Store </a>
+	<a href="Contact Us Now!.html">About Us</a>
+	<a href="DinnerHeist bubble tea.html"> Ingredients</a>
+	<a href="tutorial.html"> Tea Tutorial</a>
+	<a href="homepage.html"> Collaborations</a>
+	<a href="we're hiring.html"> We're Hiring</a>	 
+	<a href="Outlets.html"> Branch</a>
+	<a href="login.html"> Member Login</a>
+	<a href="leave us a message!.html" style="background-color: white; color: black;"> Delivery </a>
+</div>
+
+<!--side nav end-->
+
+
+<!--header starts here-->
+<div class="header">
+		<div class="bg-img">		
+			<img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1fd4b813-3342-40f7-af93-ae4a33089ef1/dato4eu-69d15573-0893-4e71-b164-10be65c54087.jpg/v1/fill/w_1280,h_625,q_75,strp/commission__coffee_shop_by_taro_k_dato4eu-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjI1IiwicGF0aCI6IlwvZlwvMWZkNGI4MTMtMzM0Mi00MGY3LWFmOTMtYWU0YTMzMDg5ZWYxXC9kYXRvNGV1LTY5ZDE1NTczLTA4OTMtNGU3MS1iMTY0LTEwYmU2NWM1NDA4Ny5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.YHs57XVGoQ2Hb7pcnRBF6bg0e38ME1SKpntZLCqs-cI"
+				alt="header background"
+					style="margin-left: 200px;">
+						</div>
+</div>
+<div class="bg-text">
+	<p  align="center" style="margin-right: ; width: 80%;">
+		<a href="main page.html" style="text-decoration:none;">
+		<img src="https://i.ibb.co/VpxWD05/Group-logo-and-name.png" width="138" 
+			alt="logo"
+				style="margin-right: 130px;" align="middle"> 
+				<br>
+					</a>
+						</p>
+						
+						<p style="margin-right: 50px;">
+		 &#120138;&#120150;&#120163;&#120167;&#120154;&#120159;&#120152; &#120165;&#120153;&#120150; &#120121;&#120150;&#120164;&#120165; &#120139;&#120150;&#120146; &#120146;&#120159;&#120149; &#8450;&#120160;&#120151;&#120151;&#120150;&#120150; &#120154;&#120159; &#120139;&#120160;&#120168;&#120159;
+	</p>
+	
+</div>
+
+<!--header ends here-->
+
+<div class="row">
+	<div class="column">
+		<h1 style="margin-left:200px;"> Partnership with GrabFoods </h1>
+		<p align="left" id="grabfoodsdescription"> 
+		Evolto's delivery system offers convenience to our valued customers who wish to enjoy our signature beverages at the comfort of their own home or
+		when they couldn't make it to one of our branches. Evolto has recently partnered with GrabFoods so delivering our drinks have never been easier!
+		</p>	
+			<form style="margin-left: 200px;">
+			Please enter your contact number: <br />
+			<input type="text" style="margin-bottom: 10px; font-size: 18px;"> <br />
+			Please enter your address: <br />
+			<input type="text" style="font-size: 18px; margin-bottom: 10px;"> <br />
+			Please enter your Email address: <br/>
+			<input type="text" style="font-size: 18px; margin-bottom: 10px;"> <br />
+			</form>
+			
+			<pre style="margin-left:200px;">Note: 
+Delivery service expects cash on delivery.				
+			</pre>
+								
+	</div>
+	
+	<div class="column" align="center">
+		<p> ※~~Menu~~※ </p>
+		<br/>
+		<p> Bubble Tea Series </p><hr />
+		
+		<label class="container"> Royal Number 10 Milk Tea 
+		<input type="checkbox">
+		<span class="checkmark"></span>
+		</label>		
+		
+		<label class="container"> Black Oolong Tea
+		<input type="checkbox">
+		<span class="checkmark"> </span>
+		</label>
+		
+		<label class="container"> Green Oolong Tea
+		<input type="checkbox">
+		<span class="checkmark"> </span>
+		</label>
+		
+		<label class="container"> Tapioca Milk Tea
+		<input type="checkbox">
+		<span class="checkmark"> </span>
+		</label>
+
+
+		<label class="container"> Garden Milk Tea
+		<input type="checkbox">
+		<span class="checkmark"> </span>
+		</label>
+
+
+		<label class="container"> Little Happiness Milk Tea
+		<input type="checkbox">
+		<span class="checkmark"> </span>
+		</label>
+
+
+		<label class="container"> Honey Golden Pearl Milk Tea
+		<input type="checkbox">
+		<span class="checkmark"> </span>
+		</label>
+
+
+		<label class="container"> Roasted Brown Sugar Milk Tea
+		<input type="checkbox">
+		<span class="checkmark"> </span>
+		</label>
+
+
+		<label class="container"> Japanese Roasted Milk Tea
+		<input type="checkbox">
+		<span class="checkmark"> </span>
+		</label>
+
+
+		<label class="container"> Malaysian Style Grass Jelly Milk Tea
+		<input type="checkbox">
+		<span class="checkmark"> </span>
+		</label>
+
+<p> Tea Series </p> <hr />
+		
+		<label class="container"> Assam Black Tea
+		<input type="checkbox">
+		<span class="checkmark"> </span>
+		</label>
+
+	
+		<label class="container"> Qing Cha Oolong Tea
+		<input type="checkbox">
+		<span class="checkmark"> </span>
+		</label>
+
+
+		<label class="container"> Lemon Winter Melon Tea
+		<input type="checkbox">
+		<span class="checkmark"> </span>
+		</label>
+
+
+		<label class="container"> Seasons Tea
+		<input type="checkbox">
+		<span class="checkmark"> </span>
+		</label>
+
+
+		<label class="container"> Koucha Black Tea
+		<input type="checkbox">
+		<span class="checkmark"> </span>
+		</label>
+
+	
+		<label class="container"> Black Oolong Tea
+		<input type="checkbox">
+		<span class="checkmark"> </span>
+		</label>
+
+
+		<label class="container"> Japanese Green Tea
+		<input type="checkbox">
+		<span class="checkmark"> </span>
+		</label>
+
+
+		<label class="container"> Passion Fruit Green Tea
+		<input type="checkbox">
+		<span class="checkmark"> </span>
+		</label>
+
+	
+		<label class="container"> Jasmine Green Tea
+		<input type="checkbox">
+		<span class="checkmark"> </span>
+		</label>
+
+<p> Coffee Series </p> <hr />
+	
+		<label class="container"> Americano
+		<input type="checkbox">
+		<span class="checkmark"> </span>
+		</label>
+
+		<label class="container"> Latte
+		<input type="checkbox">
+		<span class="checkmark"> </span>
+		</label>
+
+		<label class="container"> Matcha Coffee
+		<input type="checkbox">
+		<span class="checkmark"> </span>
+		</label>
+
+		<label class="container"> Drown-a-bear Latte
+		<input type="checkbox">
+		<span class="checkmark"> </span>
+		</label>
+	
+		<label class="container"> Cappuccino
+		<input type="checkbox">
+		<span class="checkmark"> </span>
+		</label>
+
+	
+<p> Non-Caffeinated Series </p> <hr />
+	
+		<label class="container"> Evolto's Signature Hot Chocolate
+		<input type="checkbox">
+		<span class="checkmark"> </span>
+		</label>
+		
+		<label class="container"> Caramel Signature Hot Chocolate
+		<input type="checkbox">
+		<span class="checkmark"> </span>
+		</label>
+
+
+		<label class="container"> Drown-a-bear Blended Chocolate
+		<input type="checkbox">
+		<span class="checkmark"> </span>
+		</label>
+
+
+		<label class="container"> Hazelnut Signature Hot Chocolate
+		<input type="checkbox">
+		<span class="checkmark"> </span>
+		</label>
+
+
+		<label class="container"> Star Cocoa Blend
+		<input type="checkbox">
+		<span class="checkmark"> </span>
+		</label>
+
+
+		<label class="container"> Evolto's Choc-Oreo Blend 
+		<input type="checkbox">
+		<span class="checkmark"> </span>
+		</label>
+		
+<p> Smoothie Series </p><hr />
+
+		<label class="container"> Strawberry Pudding Smoothie
+		<input type="checkbox">
+		<span class="checkmark"> </span>
+		</label>
+
+		<label class="container"> Mango Passion Fruit Smoothie
+		<input type="checkbox">
+		<span class="checkmark"> </span>
+		</label>
+
+		<label class="container"> Lychee Sago Tea Smoothie
+		<input type="checkbox">
+		<span class="checkmark"> </span>
+		</label>
+
+		<label class="container"> Pineapple Smoothie
+		<input type="checkbox">
+		<span class="checkmark"> </span>
+		</label>
+
+		<label class="container"> Peach Papaya Smoothie
+		<input type="checkbox">
+		<span class="checkmark"> </span>
+		</label><br />
+		
+		<button class="button" align="left"> <a id="visited"href="THANKS FOR PURCHASE!.html"> <strong> Checkout </strong> </a> </button>	
+		
+		
+	
+	
+	
+	
+	
+	
+	
+	</div>
+
+
+
+</div>
+
+
+
+
+
+<div class="footer">
+<br />
+	<p style="text-align: left; font-size: 18px;"> Got a question? Please email us:  <br />
+		evoltoteaandcoffee2019@gmail.com <br /> 
+		Call us at: <br />
+		(+60) 12341234 <br />
+		</p>
+		<pre style="margin-left:70px;" align="left">
+		© Copyright by Evoltotnc Sdn Bhd.
+			</pre>
+</div>
+
+
+</body>
+</html>

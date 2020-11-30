@@ -1,0 +1,427 @@
+﻿<!DOCTYPE>
+<html>
+<title>Outlets</title>
+<link rel="icon" type="image/png" href="https://i.ibb.co/VpxWD05/Group-logo-and-name.png">
+
+<style>
+/* side menu start */
+
+.sidenav {
+  height: 100%;
+  width: 170px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/*side menu end*/
+
+/*header starts here*/
+.header {
+	overflow: hidden;
+	background-color: white;
+	padding: 10px 1px;
+}
+
+.bg-img {
+	
+	background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1fd4b813-3342-40f7-af93-ae4a33089ef1/dato4eu-69d15573-0893-4e71-b164-10be65c54087.jpg/v1/fill/w_1280,h_625,q_75,strp/commission__coffee_shop_by_taro_k_dato4eu-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjI1IiwicGF0aCI6IlwvZlwvMWZkNGI4MTMtMzM0Mi00MGY3LWFmOTMtYWU0YTMzMDg5ZWYxXC9kYXRvNGV1LTY5ZDE1NTczLTA4OTMtNGU3MS1iMTY0LTEwYmU2NWM1NDA4Ny5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.YHs57XVGoQ2Hb7pcnRBF6bg0e38ME1SKpntZLCqs-cI");
+	filter: blur(2px);
+	-webkit-filter: blur(6px);
+	height: 400px;
+	width:100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover; 
+}
+
+.bg-text {
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 35%;
+  left: 55.5%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  height: 40%; 
+}
+/*header ends here*/
+
+
+/*my css start*/
+
+body {
+	
+	background-color: #fffdd0;
+}
+
+p {
+	font-size: 32px;
+	margin-left: 200px;
+	margin-right: 50px;
+	text-align: center; 
+	font-family: "Comic Sans MS";	
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: separate;
+  border-spacing: 5px;
+}
+
+td, th {
+	
+	text-align: center;
+	padding:5px;
+	border-spacing: 5px;
+	
+	width: 20px;
+	height: 10px;
+}
+
+a:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: light brown;
+  background-color: transparent;
+  text-decoration: none;
+}
+/* my css end */
+
+/*footer starts ehre*/
+.footer {
+   position: static;
+   left: 0;
+   bottom: 1;
+   width: 100%;
+   background-color: #bbb;
+   color: white;
+   text-align: center;
+   height: 30%;
+  }
+/*footer ends here*/
+
+</style>
+
+<body>
+
+<!--side nav start-->
+<div class="sidenav">
+	<a href="main page.html">Home</a>
+	<a href ="Beverage List.html"> Store </a>
+	<a href="Contact Us Now!.html">About Us</a>
+	<a href="DinnerHeist bubble tea.html"> Ingredients</a>
+	<a href="tutorial.html"> Tea Tutorial</a>
+	<a href="homepage.html"> Collaborations</a>
+	<a href="we're hiring.html"> We're Hiring</a>	 
+	<a href="Outlets.html" style="background-color: white; color: black;"> Branch</a>
+	<a href="login.html"> Member Login</a>
+	<a href="leave us a message!.html"> Delivery </a>
+	
+</div>
+
+<!--side nav end-->
+
+<!--header starts here-->
+<div class="header">
+		<div class="bg-img">		
+			<img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1fd4b813-3342-40f7-af93-ae4a33089ef1/dato4eu-69d15573-0893-4e71-b164-10be65c54087.jpg/v1/fill/w_1280,h_625,q_75,strp/commission__coffee_shop_by_taro_k_dato4eu-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjI1IiwicGF0aCI6IlwvZlwvMWZkNGI4MTMtMzM0Mi00MGY3LWFmOTMtYWU0YTMzMDg5ZWYxXC9kYXRvNGV1LTY5ZDE1NTczLTA4OTMtNGU3MS1iMTY0LTEwYmU2NWM1NDA4Ny5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.YHs57XVGoQ2Hb7pcnRBF6bg0e38ME1SKpntZLCqs-cI"
+				alt="header background"
+					style="margin-left: 200px;">
+						</div>
+</div>
+<div class="bg-text">
+	<p  align="center" style="margin-right: ; width: 80%;">
+		<a href="main page.html" style="text-decoration:none;">
+		<img src="https://i.ibb.co/VpxWD05/Group-logo-and-name.png" width="138" 
+			alt="logo"
+				style="margin-right: 130px;" align="middle"> 
+				<br>
+					</a>
+						</p>
+						
+						<p style="margin-right: 50px;">
+		 &#120138;&#120150;&#120163;&#120167;&#120154;&#120159;&#120152; &#120165;&#120153;&#120150; &#120121;&#120150;&#120164;&#120165; &#120139;&#120150;&#120146; &#120146;&#120159;&#120149; &#8450;&#120160;&#120151;&#120151;&#120150;&#120150; &#120154;&#120159; &#120139;&#120160;&#120168;&#120159;
+	</p>
+	
+</div>
+
+<!--header ends here-->
+<p> &#119978;&#120010;&#120007; &#119991;&#120007;&#119990;&#120003;&#119992;&#119997;&#119890;&#120008; </p>
+  
+<p style="margin-left: 250px; margin-right: 50px;" align="center">  
+<table>
+<tr>
+<th><a class="state-bubble" href="#Johor"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Flag_of_Johor.svg/1280px-Flag_of_Johor.svg.png" style="width: 100px; height: 50px;">Johor</a></th>
+<th><a class="state-bubble" href="#Kedah"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Flag_of_Kedah.svg/2000px-Flag_of_Kedah.svg.png" style="width: 100px; height: 50px;">Kedah</a></th>
+<th><a class="state-bubble" href="#Kelantan"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Flag_of_Kelantan.svg/2000px-Flag_of_Kelantan.svg.png" style="width: 100px; height: 50px;">Kelantan</a></th>
+<th><a class="state-bubble" href="#Kuala Lumpur"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Flag_of_Kuala_Lumpur%2C_Malaysia.svg/2000px-Flag_of_Kuala_Lumpur%2C_Malaysia.svg.png" style="width: 100px; height: 50px;">Kuala Lumpur</a></th>
+<th><a class="state-bubble" href="#Melaka"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Flag_of_Malacca.svg/2000px-Flag_of_Malacca.svg.png" style="width: 100px; height: 50px;"> Melaka</a></th>
+<th><a class="state-bubble" href="#Negeri Sembilan"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Flag_of_Negeri_Sembilan.svg/1280px-Flag_of_Negeri_Sembilan.svg.png" style="width: 100px; height: 50px;">Negeri Sembilan</a></th>
+<th><a class="state-bubble" href="#Pahang"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Flag_of_Pahang.svg/2000px-Flag_of_Pahang.svg.png" style="wodth: 100px; height: 50px;">Pahang</a></th>
+<th><a class="state-bubble" href="#Penang"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Flag_of_Penang_%28Malaysia%29.svg/2000px-Flag_of_Penang_%28Malaysia%29.svg.png" style="width: 100px; height: 50px;">Penang</a></th>
+</tr>
+
+<tr>
+<th> </th>
+<th> </th>
+<th><a class="state-bubble" href="#Perak"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT0AAACfCAMAAAC85v7+AAAAQlBMVEX///8AAAD+8gDHx8gLCwv06AD/9QC/v8AEBAW/tg7HvQnKysv/9wAAAAUhISGcnJwaGhqWlpcAAAy4sA7HyNG/wMlzUC9JAAABjElEQVR4nO3Q200DMQAAQUOOhHCB8Oy/VaAF74d10kwFqx33/cSc/WPsg1mXcVqdcGDuFe4V7hXuFe4V7hXuFe4V7hXuFe4V7hXuFe4V7hXuFe4V7hXuFe4V7hXuFe4V7hXuFe4V7hXuFe4V7hXuFe4V7hXuFe4V7hXuFe4V7hXuFe4V7hXuFe4V7hXuFe4V7hXuFZfxvTrhwH7Gy/mROeere/Nu7gXuFe4V7hXuFe4V7hXuFe4V7hXuFe4V7hXuFe4V7hXuFe4V7hXuFe4V7hXuFe4V7hXuFe4V7hXuFe4V7hXuFe4V7hXuFe4V7hXuFe4V7hXuFe4V7hXuFe4V7hXuFe4V7hX/926rIw7r7971iVlf4/WBWZ/jeXXCgW3uBe4V7hXuFe4V7hXuFe4V7hXuFe4V7hXuFe4V7hXuFe4V7hXuFe4V7hXuFe4V7hXuFe4V7hXuFe4V7hXuFe4V7hXuFe4V7hXuFe4V7hXuFe4V7hXuFe4V7hXuFe4V7hXuFdtYXXBk23jfmPX2C0iT2oI/g6LIAAAAAElFTkSuQmCC" style="width:100px; height: 50px;">Perak</a></th>
+<th><a class="state-bubble" href="#Perlis"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Flag_of_Perlis.svg/2000px-Flag_of_Perlis.svg.png" style="width: 100px; height: 50px;">Perlis</a></th>
+<th><a class="state-bubble" href="#Sabah"> <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Flag_of_Sabah.svg" style="width: 100px; height: 50px;">Sabah</a></th>
+
+<th><a class="state-bubble" href="#Selangor"> <img src="https://c.76.my/Malaysia/selangor-flag-woolen-3ft-x-6ft-se12-f060-paradoxzone-1807-23-F1119864_1.jpg" style="width: 100px; height: 50px;">Selangor</a></th>
+</tr>
+</table>
+</p>
+
+
+<p id="Johor"style="font-size:45px;"> Johor</p>
+<p style="font-size:15px;">
+Batu Pahat   
+L1.K17 & L1.K18, 1ST FLOOR, BATU PAHAT MALL, JLN KLUANG, 83000 BATU PAHAT JOHOR
+
+Sutera Utama
+128GF Jalan Sutera Tanjung 8/3, Taman Sutera Utama, Skudai, 81300 Johor Bahru. Johor, Malaysia.
+
+Kluang Mall
+33 Ground Floor, Jalan Langsat, 86000 Kluang, Johor. Malaysia.
+
+Senai Aiport    
+Senai International Airport, 81250, Johor Bahru, Johor Darul Ta'zim 
+<br/ > <br />
+OPEN: 11am - 1am (12.30am Last Order)
+</p>
+
+<p id="Kedah"style="font-size:45px;"> Kedah</p>
+<p style="font-size:15px;">
+Alor Setar  
+ALOR STAR MALL, G19, GROUND FLOOR, KAWASAN PERUMAHAN TANDOP BARU, 05400 ALOR SETAR KEDAH
+
+Amanjaya Mall   	
+LOT NO.29, GROUND FLOOR, AMANJAYA MALL, BANDAR AMANJAYA DAERAH KUALA MUDA, 08000 MK SG PETANI 
+
+Padang Matsirat   	
+Lot 8, Bandar Padang Matsirat,07100 Langkawi, Kedah Darul Aman
+
+Tesco Mergong 	
+TESCO-LOT NO G21, -H.S.(M) 14299 PT 940, TEMPAT-MERGONG, BANDAR ALOR SETAR, DAERAH KOTA SETAR, NEGERI KEDAH. 
+<br/ > <br />
+OPEN: 11am - 1am (12.30am Last Order)
+</p>
+
+
+<p id="Kelantan"style="font-size:45px;"> Kelantan</p>
+<p style="font-size:15px;">
+G Orange   
+GF-12, Lot 2138, Wisma G-Orange, Batu 4 1/2 Tunjung, Jalan Kuala Krai, 15050, Kota Bahru, Kelantan 
+
+AEON Delica Foodcourt Kota Bharu II   	
+Counter 789, Aeon Mall Kota Bahru, Jalan Jambatan Sultan Yaha Petra, Kampung Sireh, 15150 Kota Bharu, Kelantan 
+
+KB Mall  
+GK10, GROUND FLOOR, KB MALL, JALAN HAMZAH, 15050 KOTA BHARU, KELANTAN. 
+<br/ > <br />
+OPEN: 11am - 1am (12.30am Last Order)
+
+</p>
+
+<p id="Kuala Lumpur"style="font-size:45px;"> Kuala Lumpur</p>
+<p style="font-size:15px;">
+Bukit Dukung Station   	
+Lot K031-2, Concourse Level, Bukit Dukung Station, MRT SBK Line, KL 
+
+Cheras Mahkota   
+45, JLN TEMENGGUNG 11/9, 43200, BANDAR MAHKOTA CHERAS, KL 
+
+Great Eastern Mall  	
+GF 8, Ground Floor, Great Eastern Mall, Kuala Lumpur
+
+KL Trader Square  
+93G(G Floor), Plaza KL Trader Square, Block E, Jalan Gombak, Setapak, 53000 Kuala Lumpur 
+
+LRT Bangsar Station  
+K5A, K5B & N2, BANGSAR STATION, KELANA JAYA LINE 
+
+Mid Valley  
+TK-08, 3RD FLOOR, MID VALLEY MEGAMALL, LINGKARAN SYED PUTRA, 59200 KL 
+
+Shell Bukit Cheras  	
+Shell Taman Bukit Cheras, Lot 1488A, Jalan 11/144A, Taman Bukit Cheras, Kuala Lumpur, 
+<br/ > <br />
+OPEN: 11am - 1am (12.30am Last Order)
+
+</p>
+
+
+<p id="Melaka"style="font-size:45px;"> Melaka</p>
+<p style="font-size:15px;">
+Kota Laksamana
+55 ,Jalan KLJ 10, Taman Kota Laksamana Jaya, 75200 Melaka, Malaysia.
+
+Pulau Melaka
+G-47, RIVIERA@PULAU MELAKA,JALAN BAIDURI 1, 75000 MELAKA
+
+Freeport A Famosa   	
+Freeport A Famosa Resort, Jalan Kemus, Simpang Empat, Alor Gajah, 78000 Melaka 
+
+Malim Jaya   	
+A6-G-4, JALAN RAHMAT 1, TAMAN MALIM JAYA , 75250, MELAKA 
+<br/ > <br />
+OPEN: 11am - 1am (12.30am Last Order)
+
+</p>
+
+<p id="Negeri Sembilan"style="font-size:45px;"> Negeri Sembilan</p>
+<p style="font-size:15px;">
+AEON Nilai   	
+KS02 (2nd Floor), Aeon Mall, Bandar Baru Nilai, Nilai, Negeri Sembilan 
+
+Bandar Baru Nilai   	
+LOT 3, JALAN BBN 1/3L, OFF JALAN PERSIARAN PUSAT BANDAR, 71800 BANDAR BARU NILAI, NEGERI SEMBILAN 
+
+Shell Port Dickson   
+Lot 9169, 7th Mile, Jln Pantai, Port Dickson, Negeri Sembilan
+
+Bandar Baru Nilai   	
+LOT 3, JALAN BBN 1/3L, OFF JALAN PERSIARAN PUSAT BANDAR, 71800 BANDAR BARU NILAI, NEGERI SEMBILAN 
+<br/ > <br />
+OPEN: 11am - 1am (12.30am Last Order)
+
+</p>
+
+<p id="Pahang"style="font-size:45px;"> Pahang</p>
+<p style="font-size:15px;">
+East Coast Mall  	
+L2-PK01, EAST COAST MALL, JLN PUTRA SQUARE 6, PUTRA SQUARE, 25200 KUANTAN PAHANG 
+
+Petronas Bentong R&R  	
+Petronas Bentong R&R, 28700 Bentong, Pahang. 
+<br/ > <br />
+OPEN: 11am - 1am (12.30am Last Order)
+
+</p>
+
+<p id="Penang"style="font-size:45px;"> Penang</p>
+<p style="font-size:15px;">
+Gurney Plaza  	
+170-07-K1, PLAZA GURNEY, PERSIARAN GURNEY, 10250 PENANG. 
+
+Shell Jelutong Expressway   	
+Shell Station, Lot PT241 HSD (5169) Seksyen 9W, Lebuhraya Tun Dr. Lim Chong Eu, 11600 Georgetown, Penang. 
+
+Penang Sentral 
+Lot 2-04, Level 2 Penang Sentral, 6, Jalan Pantai, 12000 Butterworth, Pulau Pinang 
+
+All Seasons Place   	
+BLOCK NO.Z, STOREY, NO.LEVEL 1, UNIT NO.L1-12 & AF1-12, ALL SEASONS PLACE, LEBUHRAYA THEAN TEIK, BDR BARU AIR ITAM, 11500 PENANG 
+<br/ > <br />
+OPEN: 11am - 1am (12.30am Last Order)
+
+</p>
+
+<p id="Perak"style="font-size:45px;"> Perak</p>
+<p style="font-size:15px;">
+Ipoh Parade  	
+Lot No KF03 , First Floor ,Ipoh Parade, No 105,Jln Sultan Abdul Jalil, Greentown, 30450 Ipoh, Perak, 
+
+Station 18   
+Lot KF1, Aeon Ipoh Station 18, No.2, Susuran Stesen 18, Station 18, 31650 Ipoh, Perak 
+
+AEON Sri Manjung, Perak   	
+LOT G76, AEON SRI MANJUNG 32000 Seri Manjung, Perak, Malaysia 
+<br/ > <br />
+OPEN: 11am - 1am (12.30am Last Order)
+
+</p>
+
+<p id="Perlis"style="font-size:45px;"> Perlis</p>
+<p style="font-size:15px;">
+Kangar  	
+NO. 45, LORONG SERULING, JALAN RAJA SYED ALWI, 02700 KANGAR, PERLIS. 
+<br/ > <br />
+OPEN: 11am - 1am (12.30am Last Order)
+
+</p>
+
+
+<p id="Sabah"style="font-size:45px;"> Sabah</p>
+<p style="font-size:15px;">
+Imago Sabah 
+LOT NO. B-55, BASEMENT, IMAGO-SHOPPING MALL, KK TIMES SQUARE PHASE 2, OFF COASTAL HIGHWAY, 88100 KOTA KINABALU-SABAH 
+
+Suria Sabah 
+Kiosk-LG-K6, Lower Ground Floor, Suria Sabah Shopping Mall, 1, Jalan Tun Fuad Stephens, Pusat Bandar Kota Kinabalu, 88000 Kota Kinabalu, Sabah 
+
+Seafest Square   	
+UNIT NO 1-12, LOT NO.12, LEVEL 1, SEAFEST SQUARE, JALAN KASTAM, SEMPORNA, SABAH 
+<br/ > <br />
+OPEN: 11am - 1am (12.30am Last Order)
+
+</p>
+
+
+
+<p id="Selangor"style="font-size:45px;"> Selangor </p>
+<p style="font-size:15px;">
+AEON Delica Foodcourt One Utama   	
+Lot 015, Delica Aeon Bandar Utama Store, No. 1, Lebuh Bandar Utama, Bandar Utama Damansara, 47800 
+
+AEON Bukit Raja 	
+Lot G25, Bukit Raja Shopping Centre, Persiaran Bukit Raja 2, Bandar Baru Klang, 41150 Klang, Selangor 
+
+Klang Parade   	
+G54, Klang Parade, Kawasan 17, Klang, Malaysia, 41050 
+
+Cheras
+158-G, Jalan Dataran Cheras 9,Cheras Traders Square,43200 Cheras, Selangor
+<br/ > <br />
+OPEN: 11am - 1am (12.30am Last Order)
+<br /> <br />
+</p> 
+<div class="footer">
+<br />
+	<p style="text-align: left; font-size: 18px;"> Got a question? Please email us:  <br />
+		evoltoteaandcoffee2019@gmail.com <br /> 
+		Call us at: <br />
+		(+60) 12341234 <br />
+		</p>
+		<pre style="margin-left:70px;" align="left">
+		© Copyright by Evoltotnc Sdn Bhd.
+			</pre>
+</div>
+
+</body>
+</html>
