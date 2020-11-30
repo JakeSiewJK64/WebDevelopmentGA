@@ -1,7 +1,7 @@
 # WebDevelopmentGA
 Group Assignment for Internet Technologies (ICT 1102)
 
-Date of completion: April 2019
+Date of completion: June 2019
 
 Contributors:
 1. Siew Joe Kane
